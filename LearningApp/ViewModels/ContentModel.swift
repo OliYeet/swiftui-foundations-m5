@@ -11,6 +11,11 @@ class ContentModel: ObservableObject {
     
     @Published var modules = [Module]()
     
+    // Current module
+    
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
     var styleData: Data?
     
     init() {
@@ -18,17 +23,19 @@ class ContentModel: ObservableObject {
         getLocalData()
     }
     
+    // MARK: - Data Methods
+    
     func getLocalData() {
         
         let jsonURL = Bundle.main.url(forResource: "data", withExtension: "json")
         
         do {
-        
-        let jsonData = try Data(contentsOf: jsonURL!)
+            
+            let jsonData = try Data(contentsOf: jsonURL!)
             
             let jsonDecoder = JSONDecoder()
             
-           let modules = try jsonDecoder.decode([Module].self, from: jsonData)
+            let modules = try jsonDecoder.decode([Module].self, from: jsonData)
             
             self.modules = modules
             
@@ -53,4 +60,19 @@ class ContentModel: ObservableObject {
         
     }
     
+    // MARK: - Module navigation methods
+    
+    func beginModule(_ moduleid: Int) {
+        
+        // Find the indec for this module id
+        for index in 0..<modules.count {
+            if modules[index].id == moduleid {
+                
+                // Found the matching module
+                currentModuleIndex = index
+                break
+            }
+        }
+        currentModule = modules[currentModuleIndex]
+    }
 }
