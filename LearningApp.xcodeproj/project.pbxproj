@@ -15,6 +15,7 @@
 		13A9B7B728BECCF400D4CC7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A9B7B628BECCF400D4CC7B /* Constants.swift */; };
 		13C870C428BEB43A00E955C4 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C870C328BEB43A00E955C4 /* HomeViewRow.swift */; };
 		13CBA4A128C105E100F69131 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBA4A028C105E100F69131 /* RectangleCard.swift */; };
+		13CBA4D428C13CBF00F69131 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBA4D328C13CBF00F69131 /* TestView.swift */; };
 		13D4F52028BE984B005430A7 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D4F51F28BE984B005430A7 /* LearningApp.swift */; };
 		13D4F52228BE984B005430A7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D4F52128BE984B005430A7 /* HomeView.swift */; };
 		13D4F52428BE984D005430A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D4F52328BE984D005430A7 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		13A9B7B628BECCF400D4CC7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		13C870C328BEB43A00E955C4 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		13CBA4A028C105E100F69131 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		13CBA4D328C13CBF00F69131 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		13D4F51C28BE984B005430A7 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D4F51F28BE984B005430A7 /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		13D4F52128BE984B005430A7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				13A9B7AD28BEBC2E00D4CC7B /* ContentView.swift */,
 				13A9B7AF28BEC5DC00D4CC7B /* ContentViewRow.swift */,
 				13A9B7B128BEC9BC00D4CC7B /* ContentDetailView.swift */,
+				13CBA4D328C13CBF00F69131 /* TestView.swift */,
 				1346D39328BF7FA00090584C /* CodeTextView.swift */,
 				13CBA4A028C105E100F69131 /* RectangleCard.swift */,
 			);
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CBA4D428C13CBF00F69131 /* TestView.swift in Sources */,
 				13D4F52228BE984B005430A7 /* HomeView.swift in Sources */,
 				13C870C428BEB43A00E955C4 /* HomeViewRow.swift in Sources */,
 				13A9B7AE28BEBC2E00D4CC7B /* ContentView.swift in Sources */,
