@@ -146,8 +146,7 @@ struct TestView: View {
             
         } else {
             // Test hastn loaded yet
-            ProgressView()
-            
+            TestResultView(numCorrect: numCorrect)
         }
         
     }
